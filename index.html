@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pottery Mouse</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://www.toptal.com/designers/subtlepatterns/uploads/doodles.png');
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #8c6c63;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 40px;
+        }
+
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #8c6c63;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #6d5550;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mouse-illustration {
+            width: 150px;
+            position: absolute;
+            top: -50px;
+            left: -50px;
+        }
+
+        .decorative-stars {
+            font-size: 24px;
+            color: #FFD700;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            animation: twinkle 1.5s infinite alternate;
+        }
+
+        @keyframes twinkle {
+            0% { opacity: 1; }
+            100% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="mouse-illustration.png" alt="Cute Mouse" class="mouse-illustration">
+        <div class="decorative-stars">✨</div>
+        <h1>The Pottery Mouse</h1>
+        <p>Welcome to the enchanting world of our talented mouse, where creativity and passion come together to create beautiful pottery. Discover the magic of handcrafted ceramics and join us on a journey of artistic expression.</p>
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <a class="btn" href="content.html">Learn More</a>
+    </div>
+</body>
+</html>
